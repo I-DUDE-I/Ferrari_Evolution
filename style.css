@@ -1,0 +1,113 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+
+/* homepage */
+#homepage .homepage{
+    width: 100%;
+    aspect-ratio: 16/9;
+    overflow: hidden;
+}
+#homepage .homepageimg{
+    width: 100%;
+}
+#homepage .logotext1{
+    filter: invert(100%) sepia() saturate(10000%) hue-rotate(0deg);
+    width: 15%;
+    position: relative;
+    top: -100%;
+    left: 32.5%;
+}
+#homepage .logotext2{
+    width: 13%;
+    font-size: 2vw;
+    color: yellow;
+    font-family: "Cinzel", serif;
+    position: relative;
+    top: -111.5%;
+    left: 54.5%;
+}
+#homepage .logo{
+    position: relative;
+    top: -121%;
+    width: 5%;
+    left: 48.5%;
+}
+#homepage .car{
+    opacity: 1;
+    width: 15%;
+    position: relative;
+    left: 0%;
+    top: -60%;
+    aspect-ratio: 16/9;
+    transition: left 5s ease-in-out, opacity 0.6s ease-in;
+}
+#homepage .car .carimg{
+    width: 100%;
+}
+#homepage .wheel1{
+    width: 13%;
+    position: absolute;
+    bottom: 49%;
+    left: 72.5%;
+    transition: all 5s ease-in-out;
+    z-index: 1;
+}
+#homepage .wheel2{
+    width: 13%;
+    position: absolute;
+    bottom: 49.5%;
+    left: 9.97%;
+    transition: all 5s ease-in-out;
+    z-index: 1;
+}
+#homepage .wheelbase1{
+    position: absolute;
+    bottom: 48.5%;
+    left: 72.5%;
+    width: 13.8%;
+}
+#homepage .wheelbase2{
+    position: absolute;
+    bottom: 49%;
+    left: 9.8%;
+    width: 14%;
+}
+#homepage .homepage:hover .wheel1{
+    transform: rotate(2000deg);
+}
+#homepage .homepage:hover .wheel2{
+    transform: rotate(2000deg);
+}
+#homepage .homepage:hover .car{
+    left: 85%;
+    opacity: 1;
+}
+#homepage .button1{
+    background-color: rgba(255, 0, 0, 0);
+    color: white;
+    position: relative;
+    left: 35%;
+    top: -52%;
+    font-size: 2vw;
+    padding:0;
+    border: 2px white ridge;
+    border-radius: 0.5vw;
+    width: 0%;
+    opacity: 0;
+    cursor: pointer;
+    transition: all 0.6s ease-out;
+    transition-delay: 2.5s;
+    height: 5vw;
+}
+#homepage .homepage:hover .button1{
+    opacity: 1;
+    width: 15%;
+    padding: 1vw 3vw;
+}
+#homepage audio{
+    position: relative;
+    top: -50%;
+}

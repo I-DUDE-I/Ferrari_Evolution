@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ferrari Evolution</title>
+
+    <!-- css -->
+    <link rel="stylesheet" href="/style.css">
+
+    <!-- favIcon -->
+    <link rel="icon" href="./image/Favicon_new.png">
+
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap" rel="stylesheet">
+
+    <!-- style -->
+    <style>
+        *{
+        padding: 0;
+        margin: 0;
+        }
+
+
+        /* homepage */
+        #homepage{
+            position:sticky;
+            z-index: 3;
+        }
+        #homepage .homepage{
+            width: 100%;
+            aspect-ratio: 16/9;
+            overflow: hidden;
+        }
+        #homepage .homepageimg{
+            width: 100%;
+        }
+        #homepage .logotext1{
+            filter: invert(100%) sepia() saturate(10000%) hue-rotate(0deg);
+            width: 15%;
+            position: relative;
+            top: -100%;
+            left: 32.5%;
+        }
+        #homepage .logotext2{
+            width: 13%;
+            font-size: 2vw;
+            color: yellow;
+            font-family: "Cinzel", serif;
+            position: relative;
+            top: -111.5%;
+            left: 54.5%;
+        }
+        #homepage .logo{
+            position: relative;
+            top: -121%;
+            width: 5%;
+            left: 48.5%;
+        }
+        #homepage .car{
+            opacity: 1;
+            width: 15%;
+            position: relative;
+            left: 0%;
+            top: -60%;
+            aspect-ratio: 16/9;
+            transition: left 5s ease-in-out, opacity 0.6s ease-in;
+        }
+        #homepage .car .carimg{
+            width: 100%;
+        }
+        #homepage .wheel1{
+            width: 13%;
+            position: absolute;
+            bottom: 49%;
+            left: 72.5%;
+            transition: all 5s ease-in-out;
+            z-index: 1;
+        }
+        #homepage .wheel2{
+            width: 13%;
+            position: absolute;
+            bottom: 49.5%;
+            left: 9.97%;
+            transition: all 5s ease-in-out;
+            z-index: 1;
+        }
+        #homepage .wheelbase1{
+            position: absolute;
+            bottom: 48.5%;
+            left: 72.5%;
+            width: 13.8%;
+        }
+        #homepage .wheelbase2{
+            position: absolute;
+            bottom: 49%;
+            left: 9.8%;
+            width: 14%;
+        }
+        #homepage .homepage:hover .wheel1{
+            transform: rotate(2300deg);
+        }
+        #homepage .homepage:hover .wheel2{
+            transform: rotate(2300deg);
+        }
+        #homepage .homepage:hover .car{
+            left: 85%;
+            opacity: 1;
+        }
+        #homepage .button1{
+            background-color: rgba(255, 0, 0, 0);
+            color: white;
+            position: relative;
+            left: 35%;
+            top: -52%;
+            font-size: 2vw;
+            padding:0;
+            border: 2px white ridge;
+            border-radius: 0.5vw;
+            width: 0%;
+            opacity: 0;
+            cursor: pointer;
+            transition: all 0.6s ease-out;
+            transition-delay: 2.5s;
+            height: 5vw;
+        }
+        #homepage .homepage:hover .button1{
+            opacity: 1;
+            width: 15%;
+            padding: 1vw 3vw;
+        }
+        #homepage audio{
+            position: relative;
+            top: -50%;
+        }
+        #about a{
+            transition: all 5s;
+        }
+
+
+        /* header */
+        #header {
+            width: 100%;
+            position: fixed;
+            top: 0;
+            z-index: 2;
+        }
+        #header .header{
+            background-color: white;
+            aspect-ratio: 50/1;
+            overflow: hidden;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0px 1vw;
+            font-family: "Cinzel", serif;
+        }
+        #header img{
+            width: 100%;
+        }
+        #header .img{
+            width: 1.6%;
+        }
+        #header .sp1{
+            font-size: 1vw;
+            font-weight: 500;
+        }
+        #header .sp2{
+            font-size: 0.8vw;
+        }
+
+
+      
+        /* intro */
+        #intro .intro{
+            width: 100%;
+            aspect-ratio: 16/9;
+            background-image: url(./image/intro/thumb-1920-273010.jpg);
+            background-size: cover;
+            background-attachment: fixed;
+            display: flex;
+            justify-content: space-between;
+            gap: 5%;
+            overflow: hidden;
+        }
+        #intro p{
+            font-family: "Cinzel", serif;
+            padding: 2vw;
+            width: 50%;
+            margin-left: 20%;
+            margin-top: 17%;
+            color: rgb(255, 255, 255);
+            background-color: rgba(0, 0, 0, 0.3);
+            backdrop-filter:blur(8px);
+            text-shadow: 2px 4px 6px black;
+            height: 46%;
+            font-size: 1.5vw;
+            border-radius: 1vw;
+            border: 2px white ridge;
+        }
+        #intro .enzo{
+            width: 25%;
+            margin-right: 5%;
+            margin-top: 18%;
+            border-radius: 1vw;
+            height: 50%;
+        }
+        #intro .dummy{
+            height: 0px;
+            width: 0px;
+        }
+        #intro .dummy h1{
+            font-family: "Cinzel", serif;
+            font-size: 2vw;
+            color: white;
+            position: relative;
+            top: 6vw;
+            left: -57vw;
+            width: 15vw;
+            border-bottom: red 0.4vw ridge;
+            backdrop-filter: blur(10px);
+            text-shadow: 2px 2px 0px black;
+        }
+
+
+        /* Slides */
+        .slide{
+            width: 100%;
+            aspect-ratio: 16/9;
+            background-size: cover;
+            background-attachment: fixed;
+        }
+        .slide1{
+            background-image: url(./image/1930/1.jpg);
+        }
+        .slide2{
+            background-image: url(./image/1940/1.jpg);
+        }
+        .slide3{
+            background-image: url(./image/1950/1.jpg);
+        }
+        .slide4{
+            background-image: url(./image/1960/1.jpg);
+        }
+        .slide5{
+            background-image: url(./image/1970/1.jpg);
+        }
+        .slide6{
+            background-image: url(./image/1980/1.jpg);
+        }
+        .slide7{
+            background-image: url(./image/1990/1.jpg);
+        }
+        .slide8{
+            background-image: url(./image/2000/1.jpg);
+        }
+        .slide9{
+            background-image: url(./image/2010/1.jpg);
+        }
+        .slide10{
+            background-image: url(./image/2020/1.jpg);
+        }
+
+    </style>
+
+
+</head>
+<body>
+    
+    <!-- Homepage -->
+    <section id="homepage">
+        <div class="homepage">
+            <img class="homepageimg" src="./image/homepage.jpg" alt="">
+            <img class="logotext1" src="./image/logo text.png" alt="">
+            <h1 class="logotext2">Evolution</h1>
+            <img class="logo" src="./image/logo.jpg" alt="">
+            <a href="javascript:setTimeout(()=>{window.location = '#intro' },3000);"><button class="button1" onclick="document.getElementById('sound1').play();">Start</button></a>
+            <!-- <button class="button1" onclick="document.getElementById('sound1').play();">Start</button> -->
+            <audio id="sound1" src="./audio/lambo-start-up-sound-26364 Ringtone.mp3" preload="auto"></audio>
+            <div class="car">
+                <img class="carimg" src="./image/car.png" alt="">
+                <img class="wheel1" src="./image/wheel.png" alt="">
+                <img class="wheel2" src="./image/wheel.png" alt="">
+                <img class="wheelbase1" src="./image/wheelbase.png" alt="">
+                <img class="wheelbase2" src="./image/wheelbase.png" alt="">
+            </div>
+        </div>
+    </section>
+
+    <!-- header -->
+    <section id="header">
+        <div class="header">
+            <div><span class="sp1">FERRARI </span><span class="sp2">Evolution</span></div>
+            <div class="img"><img src="./image/Favicon_new.png" alt=""></div>
+        </div>
+    </section>
+
+    <!-- intro -->
+    <section id="intro">
+        <div class="intro">
+            <p>Ferrari's origin story is revved up by racing. Enzo Ferrari, an Alfa Romeo racing alum, founded Scuderia Ferrari, a racing team, in 1929. <br> Though initially using Alfa Romeo cars, Enzo's passion for racing led him to form his own car company, Auto Avio Costruzioni (AAC), in 1939. While WWII delayed their racing debut, AAC's first car, the Tipo 815, arrived in 1940. <br> Finally, in 1947, Ferrari hit the road with its first production car, the 125 S, marking the official start of the Ferrari legend.</p>
+            <img class="enzo" src="./image/intro/enzo.webp" alt="">
+            <div class="dummy">
+                <h1>Enzo Ferrari</h1>
+            </div>
+            <!-- <button>INTRO</button> -->
+        </div>
+    </section>
+
+    <!-- silde1 -->
+    <section id="slide1">
+        <div class="slide1 slide"></div>
+    </section>
+    
+    
+    <!-- silde2 -->
+    <section id="slide2">
+        <div class="slide2 slide"></div>
+    </section>
+    
+    <!-- silde3 -->
+    <section id="slide3">
+        <div class="slide3 slide"></div>
+    </section>
+    
+    <!-- silde4 -->
+    <section id="slide4">
+        <div class="slide4 slide"></div>
+    </section>
+    
+    <!-- silde5 -->
+    <section id="slide5">
+        <div class="slide5 slide"></div>
+    </section>
+    
+    <!-- silde6 -->
+    <section id="slide6">
+        <div class="slide6 slide"></div>
+    </section>
+    
+    <!-- silde7 -->
+    <section id="slide7">
+        <div class="slide7 slide"></div>
+    </section>
+    
+    <!-- silde8 -->
+    <section id="slide8">
+        <div class="slide8 slide"></div>
+    </section>
+    
+    <!-- silde9 -->
+    <section id="slide9">
+        <div class="slide9 slide"></div>
+    </section>
+    
+    <!-- silde10 -->
+    <section id="slide10">
+        <div class="slide10 slide"></div>
+    </section>
+    
+
+</body>
+</html>
