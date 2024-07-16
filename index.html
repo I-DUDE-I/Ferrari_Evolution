@@ -239,7 +239,7 @@
             transition: all 0.3s ease-out;
         }
         #intro .intro:hover button{
-            width: 6.5vw;
+            width: 7vw;
             background-color: grey;
             color: white;
             border-right: 0.5vw solid black;
@@ -326,10 +326,50 @@
             top: 37.3vw;
         }
         .slide:hover .leftbutton{
-            width: 6.5vw;
+            width: 7vw;
             background-color: grey;
             color: white;
             border-right: 0.5vw solid black;
+        }
+
+        .slide .heading{
+            color: white;
+            font-family: "Cinzel", serif;
+            font-size: 2vw;
+            position: relative;
+            top: 6vw;
+            left: 45.5vw;
+            padding: 0vw 2vw;
+            width: 5vw;
+            border-bottom: red 0.4vw ridge;
+            backdrop-filter: blur(10px);
+            text-shadow: 2px 2px 0px black;
+            opacity: 0;
+            transition: all 0.3s ease-out;
+        }
+        .slide .body{
+            position: relative;
+            top: 10vw;
+            left: 27.5%;
+            font-family: "Cinzel", serif;
+            color: rgb(255, 255, 255);
+            background-color: rgba(0, 0, 0, 0.3);
+            backdrop-filter:blur(8px);
+            text-shadow: 2px 4px 6px black;
+            font-size: 1vw;
+            border-radius: 1vw;
+            border: 2px white ridge;
+            width: 45%;
+            text-align: center;
+            padding: 1vw;
+            opacity: 0;
+            transition: all 0.3s ease-out;
+        }
+        .slide:hover .body{
+            opacity: 1;
+        }
+        .slide:hover .heading{
+            opacity: 1;
         }
 
     </style>
@@ -382,6 +422,8 @@
     <section id="slide1">
         <div class="slide1 slide">
             <a href="#slide1"><button class="leftbutton">1930s</button></a>
+            <div class="heading">1930s</div>
+            <div class="body"><b>The Alfa Romeo P3</b> was used by the Scuderia Ferrari racing team, which was founded by Enzo Ferrari in 1929 as a racing division for Alfa Romeo. The P3 featured a yellow shield with a black horse on its nose, which was a continuation of a story that began with Italian fighter pilot Francesco Baracca.</div>
         </div>
     </section>
     
@@ -390,6 +432,8 @@
     <section id="slide2">
         <div class="slide2 slide">
             <a href="#slide2"><button class="leftbutton">1940s</button></a>
+            <div class="heading">1940s</div>
+            <div class="body"><b>The Ferrari 166 MM</b> was introduced in 1948 and was designed for long-distance competitions. The car was named after the Mille Miglia, a famous road race that Ferrari cars often won. The 166 MM was light and dynamic, but still structurally stiff, and its engine was modified to run on commercially available fuel.</div>
         </div>
     </section>
     
@@ -397,6 +441,8 @@
     <section id="slide3">
         <div class="slide3 slide">
             <a href="#slide3"><button class="leftbutton">1950s</button></a>
+            <div class="heading">1950s</div>
+            <div class="body">In 1957, <b>The Ferrari 250 Testa Rossa</b>, or "Red Head" in Italian, burst onto the racing scene. A response to racing rule changes, it was a powerful evolution of existing Ferrari designs. This stunning machine, with its signature red valve covers, roared to victory in multiple World Sports Car Championships,</div>
         </div>
     </section>
     
@@ -404,6 +450,8 @@
     <section id="slide4">
         <div class="slide4 slide">
             <a href="#slide4"><button class="leftbutton">1960s</button></a>
+            <div class="heading">1960s</div>
+            <div class="body">A legend was born in 1962 with the <b>Ferrari 250 GTO</b>. Built to conquer racing, it was the ultimate evolution of Ferrari's 250 GT series. Packing a mighty V12 and sculpted for speed, the 250 GTO left its mark on racing history, becoming both a champion and a collector's dream.</div>
         </div>
     </section>
     
@@ -411,6 +459,8 @@
     <section id="slide5">
         <div class="slide5 slide">
             <a href="#slide5"><button class="leftbutton">1970s</button></a>
+            <div class="heading">1970s</div>
+            <div class="body">In 1964, Ferrari unveiled the <b>Ferrari 275 GTB</b>, a successor to their beloved 250 series. This grand tourer offered a thrilling combination: a powerful V12 engine for exhilarating drives and a luxurious interior for comfortable journeys. With its elegant Pininfarina design, the 275 GTB became a symbol of sophistication and speed.</div>
         </div>
     </section>
     
@@ -418,6 +468,8 @@
     <section id="slide6">
         <div class="slide6 slide">
             <a href="#slide6"><button class="leftbutton">1980s</button></a>
+            <div class="heading">1980s</div>
+            <div class="body">Ferrari unleashed the <b>Ferrari 288 GTO</b> in 1984. This wasn't the typical Ferrari; it was a homologation special, a street-legal version of a race car. Packing a twin-turbocharged V8 and cloaked in aggressive aerodynamics, the 288 GTO blurred the lines between road and track.</div>
         </div>
     </section>
     
@@ -425,6 +477,8 @@
     <section id="slide7">
         <div class="slide7 slide">
             <a href="#slide7"><button class="leftbutton">1990s</button></a>
+            <div class="heading">1990s</div>
+            <div class="body"><b>The Ferrari F40 LM</b> roared to life in 1989. Built for pure racing glory, it was a stripped-down, ultra-powerful version of the iconic F40. With a modified engine pushing even more horsepower and lightweight materials shaving off weight, the F40 LM was a force to be reckoned with on the track.</div>
         </div>
     </section>
     
@@ -432,6 +486,8 @@
     <section id="slide8">
         <div class="slide8 slide">
             <a href="#slide8"><button class="leftbutton">2000s</button></a>
+            <div class="heading">2000s</div>
+            <div class="body">In 2002, Ferrari unveiled the <b>Ferrari Enzo</b>, a magnificent homage to their founder. This mid-engine monster brought Formula 1 technology to the streets. Boasting a carbon-fiber body, a powerful V12 engine, and cutting-edge aerodynamics, the Enzo embodied the pinnacle of Ferrari's performance and innovation.</div>
         </div>
     </section>
     
@@ -439,6 +495,8 @@
     <section id="slide9">
         <div class="slide9 slide">
             <a href="#slide9"><button class="leftbutton">2010s</button></a>
+            <div class="heading">2010s</div>
+            <div class="body">The <b>Ferrari LaFerrari</b>, meaning "The Ferrari" in Italian, arrived in 2013. This hypercar wasn't just powerful, it was a technological marvel.  Ferrari's first hybrid production car, the LaFerrari combined a mighty V12 engine with an electric motor for earth-shattering performance and lower emissions, making it a true innovation in Ferrari's legacy.</div>
         </div>
     </section>
     
@@ -446,6 +504,8 @@
     <section id="slide10">
         <div class="slide10 slide">
             <a href="#slide10"><button class="leftbutton">2020s</button></a>
+            <div class="heading">2020s</div>
+            <div class="body">The<b> Ferrari SF90 Stradale</b>, which debuted in 2019, marked a historic shift for the iconic brand. This mid-engine marvel wasn't just powerful, it was Ferrari's first ever plug-in hybrid.  Combining a monstrous twin-turbo V8 with three electric motors, the SF90 unleashed a new era of performance, offering both earth-shattering speed and the ability to run on electric power for short distances.</div>
         </div>
     </section>
     
